@@ -1,12 +1,6 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
+# Sample Python/Streamlit
 
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
-
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
-
-# Sample <LANGUAGE/FRAMEWORK>
-
-Sample description
+LinearPredictor is an interactive web application designed to help users build and explore simple linear regression models. Users can upload their own datasets, choose predictor and response variables, and train a linear regression model. The app allows users to make predictions on new data, visualize the regression line, and evaluate model performance through interactive plots.
 
 ---
 
@@ -14,21 +8,45 @@ Sample description
 
 ### Open Using Daytona  
 
-1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
-2. **Create the Workspace**:  
-   ```bash  
-   daytona create <SAMPLE_REPO_URL> 
-   ```  
+1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).
 
-... MORE STEPS IF NEEDED ...
+2. **Create the Workspace**:
 
-4. **Start the Application**:  
    ```bash  
-   command to start the app
-   ```  
+   daytona create https://github.com/daytonaio/sample-python-linear-predictor.git
+   ```
+
+3. **Start the Application**:
+
+   ```bash  
+   streamlit run app.py
+   ```
 
 ---
 
 ## ✨ Features  
 
-List of sample features (e.g. realtime chat app, standardized development environment with devcontainers)
+1. 📁 **Upload CSV File**: Easily upload your CSV file.
+2. 🔢 **Select Variables**: Choose independent ***(numerical variables only)*** and dependent variables.
+3. 📊 **View Model**: See the generated model equation, metrics, and visualizations.
+4. 🔮 **Predict**: Input a comma-separated vector (X) to make predictions.
+5. 📄 **Generate PDF Report**: Tick the box (Generate report as PDF) to get a PDF report of the model.
+
+🔴 Only **numerical variables** are supported.
+
+## Screenshots
+
+**Upload csv file**
+![image](https://github.com/user-attachments/assets/af2a1080-d0d0-4bf2-86f2-a456ce3d6ba3)
+
+**Dataset and Model Preview**
+![image](https://github.com/user-attachments/assets/8932eb95-b5eb-4189-81e8-d20eb67aa2b8)
+
+**Visualisations**
+![image](https://github.com/user-attachments/assets/bf6c735f-4a55-4564-a0fd-e0770f63a5bc)
+
+**Predictions**
+![image](https://github.com/user-attachments/assets/fc8dd493-59b1-4f82-9885-42a92859aa55)
+
+**Generated pdf report**
+![image](https://github.com/user-attachments/assets/f3203a46-3be7-4451-ad82-cb66ba280660)
